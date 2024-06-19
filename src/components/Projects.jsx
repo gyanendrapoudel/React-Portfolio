@@ -1,90 +1,43 @@
 import project from '../assets/images/project.png'
+import Project from './Project'
+import Title from './Title'
 const Projects = () => {
   return (
     <section className="hero pad-maker" id="project">
       <h4>my Project</h4>
       <div className="projects">
-        <div className="project1">
-          <div className="img-container">
-            <img className="profile-pic" src={project} alt="profile pic" />
-          </div>
-          <div className="project-links display-flex-center">
-            <a href="https://github.com/gyanendrapoudel/jobster">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://redux-toolkit-jobster.netlify.app/landing"
-              target="_blank"
-            >
-              <i className="fa-brands fa-chrome"></i>
-            </a>
-          </div>
-          <div className="skill-links"></div>
-          <div className="project-description">
-            <h3>Jobster Development</h3>
-            <p>TechStack: React, Redux, thunkAPI</p>
-          </div>
-        </div>
-        <div className="project2">
-          <div className="img-container">
-            <img className="profile-pic" src={project} alt="profile pic" />
-          </div>
-          <div className="project-links display-flex-center">
-            <a href="https://github.com/gyanendrapoudel/tours">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a href="https://gyanendrapoudel.netlify.app/" target="_blank">
-              <i className="fa-brands fa-chrome"></i>
-            </a>
-          </div>
-          <div className="skill-links"></div>
-          <div className="project-description">
-            <h3>Tour Blog</h3>
-            <p>TechStack: React, CSS </p>
-          </div>
-        </div>
-        <div className="project3">
-          <div className="img-container">
-            <img className="profile-pic" src={project} alt="profile pic" />
-          </div>
-          <div className="project-links display-flex-center">
-            <a href="https://github.com/gyanendrapoudel/YouTubeClone">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://gyanendrapoudel.github.io/YouTubeClone/"
-              target="_blank"
-            >
-              <i className="fa-brands fa-chrome"></i>
-            </a>
-          </div>
-          <div className="skill-links"></div>
-          <div className="project-description">
-            <h3>YouTube Clone</h3>
-            <p>TechStack: HTML, CSS</p>
-          </div>
-        </div>
-        <div className="project4">
-          <div className="img-container">
-            <img className="profile-pic" src={project} alt="profile pic" />
-          </div>
-          <div className="project-links display-flex-center">
-            <a href="https://github.com/gyanendrapoudel/Parallex">
-              <i className="fa-brands fa-github"></i>
-            </a>
-            <a
-              href="https://gyanendrapoudel.github.io/Parallex/"
-              target="_blank"
-            >
-              <i className="fa-brands fa-chrome"></i>
-            </a>
-          </div>
-          <div className="skill-links"></div>
-          <div className="project-description">
-            <h3>Parallax Effect Project</h3>
-            <p>TechStack: HTML, CSS</p>
-          </div>
-        </div>
+        <Project
+          webLink={'https://github.com/gyanendrapoudel/jobster'}
+          gitLink={'https://redux-toolkit-jobster.netlify.app/landing'}
+          projectTitle={'Jobster Development'}
+          techStack={'TechStack: React, Redux, thunkAP'}
+          name={'project1'}
+        />
+
+        <Project
+          webLink={'https://gyanendrapoudel.netlify.app/'}
+          gitLink={'https://github.com/gyanendrapoudel/tours'}
+          projectTitle={'Tour Blog'}
+          techStack={'TechStack: React, CSS'}
+          name={'project2'}
+        />
+
+        <Project
+          webLink={'https://gyanendrapoudel.github.io/YouTubeClone/'}
+          gitLink={'https://github.com/gyanendrapoudel/YouTubeClone'}
+          projectTitle={'YouTube Clone'}
+          techStack={'TechStack: HTML, CSS'}
+          name={'project3'}
+        />
+        <Project
+          webLink={'https://github.com/gyanendrapoudel/Parallex'}
+          gitLink={'https://gyanendrapoudel.github.io/Parallex/'}
+          projectTitle={'Parallax Effect Project'}
+          techStack={'TechStack: HTML, CSS'}
+          name={'project4'}
+        />
+
+        
       </div>
     </section>
   )

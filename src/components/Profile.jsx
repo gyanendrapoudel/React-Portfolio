@@ -1,8 +1,9 @@
 import profile from '../assets/images/gyan.png'
+import Title from './Title'
 const Profile = () => {
   return (
     <section className="profile" id="profile">
-      <div className=" pad-maker profile-text">About Me</div>
+      <Title title={"About Me"} clas={"pad-maker profile-text"} />
       <div className="profile-content display-flex">
         <div className="img">
           <img src={profile} alt="" />

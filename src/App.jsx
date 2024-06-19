@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 function App() {
   return (
       <>
-      <input type="checkbox" id="darkMode"/>
+    <input type="checkbox" id="darkMode"/>
     <div className="wrapper">
     <label htmlFor="darkMode"><i className="fa-solid fa-circle-half-stroke"></i></label>
         <Navbar/>
