@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false)
   return (
     <header id="header">
       <div className=" pad-maker heading  display-flex">
@@ -25,13 +28,14 @@ const Navbar = () => {
           </a>
         </div>
         <div className="hamburger">
-          <label htmlFor="hamburger">
+          <label htmlFor="hamburger" onClick={()=>setShowMenu(!showMenu)}>
             {' '}
             <i className="fa-solid fa-bars"></i>
           </label>
 
           <input type="checkbox" id="hamburger" />
-          <ul className="hamburger-menu display-flex-center">
+          <ul className={showMenu?"hamburger-menu slide display-flex-center":"hamburger-menu  display-flex-center"}
+          onClick={()=>setShowMenu(!showMenu)}>
             <li>
               <a href="#about-me" className="link1">
                 Home

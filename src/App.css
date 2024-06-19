@@ -185,9 +185,12 @@ header{
 }
 
 
-#hamburger:checked + .hamburger-menu {
+/* #hamburger:checked + .hamburger-menu {
     right: -40px;
-}
+} */
+ .slide{
+    right: -40px;
+ }
 
 /* dark mode */
 [for="darkMode"]{
