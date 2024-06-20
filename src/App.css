@@ -1,8 +1,8 @@
 :root{
 
     
-    --normal-mode-bg--:rgb(108, 105, 96);
-    --normal-mode-bg2--: #007F73;
+    --normal-mode-bg--:rgb(88, 128, 134);
+    --normal-mode-bg2--: #909448;
     --dark-mode-bg--:black;
     --text-color--:white;
     --primary--:var(--normal-mode-bg--);
