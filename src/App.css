@@ -376,10 +376,19 @@ text-decoration: underline;
 }
 
 .project1,.project2,.project3,.project4{
-    box-shadow:var(--shadow--);
+    box-shadow:var(--shadow1--);
     border-radius: 10px;
     color: var(--normal-text--);
+    transition: all 0.15s linear;
+    /* cursor: pointer; */
     
+}
+
+.projects>div:hover{
+     cursor: pointer;
+     box-shadow:var(--shadow--);
+     transform: scale(1.01);
+     
 }
 .img-container img{
     border: none;
