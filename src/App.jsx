@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Profile from "./components/Profile"
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { Routes,Route } from 'react-router-dom'
 
 function App() {
   return (
@@ -15,19 +16,27 @@ function App() {
     <div className="wrapper">
     <label htmlFor="darkMode"><i className="fa-solid fa-circle-half-stroke"></i></label>
         <Navbar/>
-        <Hero/>
+        {/* <Hero/> */}
 
-        <Skills/>
+        {/* <Skills/> */}
         
-        <Projects/>
+        {/* <Projects/> */}
 
         {/* <!-- Profile Section --> */}
-        <Profile/>
+        {/* <Profile/> */}
 
         {/* <!-- contact me --> */}
-        <Contact/>
+        {/* <Contact/> */}
         
-      
+        {/* using react router */}
+
+        <Routes>
+          <Route path='/' element={<Hero/>}/>
+          <Route path="skills" element={<Skills/>}/>
+          <Route path="projects" element={<Projects/>}/>
+          <Route path="profile" element={<Profile/>}/>
+          <Route path="contact" element={<Contact/>}/>
+        </Routes>
         {/* <!-- footer --> */}
         <Footer/>
        
