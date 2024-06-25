@@ -480,6 +480,9 @@ padding-left: 20px;
     margin-bottom: 3rem;
   
 }
+.contact>h2{
+    padding: 1.5rem;
+}
 .contact>h2, .contact>h3{
     text-align: center;
     margin-top: 3rem;
@@ -492,9 +495,10 @@ padding-left: 20px;
 .contact-links{
     gap:4rem;
     font-size: 1.5rem;
+     padding: 1.5rem;
 }
-.email-link>div{
-   
+.email-link{
+ padding-top: 1.5rem;
 }
 
 .email-link>*{
