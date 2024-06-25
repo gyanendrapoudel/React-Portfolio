@@ -8,14 +8,12 @@ import Profile from "./components/Profile"
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import { Routes,Route } from 'react-router-dom'
+import Layout from './components/Layout'
 
 function App() {
   return (
       <>
-    <input type="checkbox" id="darkMode"/>
-    <div className="wrapper">
-    <label htmlFor="darkMode"><i className="fa-solid fa-circle-half-stroke"></i></label>
-        <Navbar/>
+   
         {/* <Hero/> */}
 
         {/* <Skills/> */}
@@ -31,11 +29,13 @@ function App() {
         {/* using react router */}
 
         <Routes>
+          <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Hero/>}/>
           <Route path="skills" element={<Skills/>}/>
           <Route path="projects" element={<Projects/>}/>
           <Route path="profile" element={<Profile/>}/>
           <Route path="contact" element={<Contact/>}/>
+          </Route>
         </Routes>
         {/* <!-- footer --> */}
         <Footer/>
@@ -45,7 +45,7 @@ function App() {
        
 
 
-    </div>
+   
       </>
   
 )
