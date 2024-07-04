@@ -1,4 +1,17 @@
+import { useEffect, useState } from "react"
+
 const Footer = () => {
+  const [upIcon, setUpIcon] = useState(0)
+  const handleScroll=()=>{
+    console.log(window.scrollY)
+    setUpIcon(window.scrollY)
+  }
+  useEffect(()=>{
+    window.addEventListener("scroll",handleScroll)
+    return ()=>{
+      window.removeEventListener("scroll",handleScroll)
+    }
+  },[])
   return (
     <>
       <section className="footer ">
@@ -39,9 +52,11 @@ const Footer = () => {
         </div>
       </section>
       {/* <!-- page navigation icon --> */}
-      <a href="#about-me" className="go-up">
-        <i className="fa-solid fa-chevron-up"></i>
-      </a>
+      {upIcon > 700 && (
+        <a href="#about-me" className="go-up">
+          <i className="fa-solid fa-chevron-up"></i>
+        </a>
+      )}
     </>
   )
 }

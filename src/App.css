@@ -1,8 +1,8 @@
 :root{
 
     
-    --normal-mode-bg--:rgb(108, 105, 96);
-    --normal-mode-bg2--: #007F73;
+    --normal-mode-bg--:rgb(88, 128, 134);
+    --normal-mode-bg2--: #909448;
     --dark-mode-bg--:black;
     --text-color--:white;
     --primary--:var(--normal-mode-bg--);
@@ -185,9 +185,12 @@ header{
 }
 
 
-#hamburger:checked + .hamburger-menu {
+/* #hamburger:checked + .hamburger-menu {
     right: -40px;
-}
+} */
+ .slide{
+    right: -40px;
+ }
 
 /* dark mode */
 [for="darkMode"]{
@@ -373,10 +376,19 @@ text-decoration: underline;
 }
 
 .project1,.project2,.project3,.project4{
-    box-shadow:var(--shadow--);
+    box-shadow:var(--shadow1--);
     border-radius: 10px;
     color: var(--normal-text--);
+    transition: all 0.15s linear;
+   
     
+}
+
+.projects>div:hover{
+  
+     box-shadow:var(--shadow--);
+     transform: scale(1.01);
+     
 }
 .img-container img{
     border: none;
@@ -468,6 +480,9 @@ padding-left: 20px;
     margin-bottom: 3rem;
   
 }
+.contact>h2{
+    padding: 1.5rem;
+}
 .contact>h2, .contact>h3{
     text-align: center;
     margin-top: 3rem;
@@ -480,9 +495,10 @@ padding-left: 20px;
 .contact-links{
     gap:4rem;
     font-size: 1.5rem;
+     padding: 1.5rem;
 }
-.email-link>div{
-   
+.email-link{
+ padding-top: 1.5rem;
 }
 
 .email-link>*{
