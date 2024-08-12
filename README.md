@@ -70,4 +70,4 @@ Feel free to reach out to me at
 
 ---
 
-Thank you for visiting my portfolio website repository! I hope you find it informative and engaging. Your feedback and contributions are highly appreciated.
+Thank you for visiting my portfolio website repository! I hope you find it informative and engaging. Your feedback and contributions are highly appreciated..

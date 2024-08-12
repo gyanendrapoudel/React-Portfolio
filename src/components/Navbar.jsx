@@ -29,40 +29,46 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="hamburger">
-          <label htmlFor="hamburger" onClick={()=>setShowMenu(!showMenu)}>
+          <label htmlFor="hamburger" onClick={() => setShowMenu(!showMenu)}>
             {' '}
             <i className="fa-solid fa-bars"></i>
           </label>
 
           <input type="checkbox" id="hamburger" />
-          <ul className={showMenu?"hamburger-menu slide display-flex-center":"hamburger-menu  display-flex-center"}
-          onClick={()=>setShowMenu(!showMenu)}>
+          <ul
+            className={
+              showMenu
+                ? 'hamburger-menu slide display-flex-center'
+                : 'hamburger-menu  display-flex-center'
+            }
+            onClick={() => setShowMenu(!showMenu)}
+          >
             <li>
-              <a href="#about-me" className="link1">
+              <Link to="/" className="link1">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#skill" className="link2">
+              <Link to="/skills" className="link2">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
               {' '}
-              <a href="#project" className="link3">
+              <Link to="/projects" className="link3">
                 Project
-              </a>
+              </Link>
             </li>
             <li>
               {' '}
-              <a href="#profile" className="link4">
+              <Link to="/profile" className="link4">
                 About Me
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#contact" className="link5">
+              <Link to="/contact" className="link5">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
